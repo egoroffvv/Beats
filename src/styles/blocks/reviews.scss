@@ -1,0 +1,142 @@
+.reviews-section__container {
+    &:before {
+        content: "";
+        width: rem(35px);
+        height: rem(35px);
+        background: #868686;
+        border-radius: 50%;
+        top: 98%;
+        left: 9%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.reviews__display {
+    background-color: #F8FAF9;
+    
+    overflow: hidden;
+    position: relative;
+    margin-bottom: rem(15px);
+
+    &:before {
+        content: "";
+        display: block;
+        width: rem(90px);
+        height: rem(90px);
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: rem(-65px);
+    }
+
+    @include tablets {
+       margin-bottom: rem(61px);
+    }
+}
+
+.reviews__display-inner {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: rem(42px) rem(140px) rem(42px) rem(42px);
+    }
+}
+
+.comment {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: rem(42px) rem(140px) rem(42px) rem(42px);
+
+    @include tablets {
+        padding: rem(56px) rem(24px) rem(40px);
+    }
+
+
+    
+    &.active {
+        position: static;
+        opacity: 1;
+    }
+}
+
+.reviews__avatar {
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+    }
+}
+
+.reviews__avatar-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.reviews__content {
+    flex: 1;
+    margin-left: rem(40px);
+    padding-top: rem(24px);;
+
+    @include tablets {
+       margin-left: 0;
+    }
+    
+    @include tablets {
+       margin-left: 0;
+       padding-top: rem(23px);
+    }
+}
+
+.reviews__title {
+    font-size: rem(24px);
+    font-weight: bold;
+    margin-bottom: rem(27px);
+
+    @include tablets {
+        margin-bottom: rem(11px);
+    }
+}
+
+.reviews__desc {
+    margin-bottom: rem(38px);
+    color: $darkGray;
+    font-size: rem(16px);
+    line-height: rem(18.5px);
+
+    @include tablets {
+        padding: 0 rem(15px);
+    }
+}
+
+.reviews__author {
+    font-size: rem(18px);
+    font-weight: bold;
+}
+
+.reviews__switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: rem(35px);
+    height: rem(35px);
+    background: #868686;
+    border-radius: 50%;
+    bottom: rem(-55px);
+    left: 0;
+    position: relative;
+}

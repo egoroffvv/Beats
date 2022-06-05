@@ -1,0 +1,123 @@
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    gap: rem(10px);
+    min-height: rem(480px);
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: initial;
+    }
+
+    @include phones {
+        min-height: initial;
+    }
+}
+
+.team__card {
+    width: 24%;
+    text-align: center;
+    
+    @include tablets {
+        width: 100%;
+        min-width: rem(222px);
+        text-align: center;
+        margin-left: 0;
+        &:nth-child(even) {
+            padding-top: 0;
+        }
+    }
+
+    @include phones {
+        width: 44%;
+    }
+}
+
+.team__photo {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    @include tablets {
+            display: none;
+            flex-direction: column;
+        }
+    }
+
+.team__photo--hidden {
+    display: none;
+    
+    @include tablets {
+        display: flex;
+    }
+
+}
+
+
+.team__pic {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+.team__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: rem(20px);
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-left: rem(30px);
+
+    @include tablets {
+        margin: 0 auto;
+    }
+
+    @include phones {
+        margin: 0 auto;
+    }
+
+    &:after {
+        content: "";
+        width: rem(9px);
+        height: rem(7px);
+        margin-left: rem(5px);
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-out;
+        background: url(../img/team/Polygon.png) center center / contain no-repeat ;
+    }
+}
+
+.team__desc {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        justify-content: center;
+    }
+    
+    @include phones {
+        justify-content: center;;
+    }
+
+}
+
+.team__position {
+    margin-bottom: rem(6px);
+}
+
+.team__text {
+    color: #666666;
+    line-height: rem(19px);
+}

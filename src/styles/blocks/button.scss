@@ -1,0 +1,36 @@
+.button {
+    font-size: rem(15px);
+    font-weight: bold;
+    line-height: 1;
+    background: #E01F3D;
+    border-radius: rem(100px);
+    padding: rem(18px) rem(41px);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border: 0 solid transparent;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #CA1B36;
+        transition: 0.4s
+    }
+    
+    &--type--secondary {
+        background: transparent;
+        color: #FFFFFF;
+        padding: rem(17px) rem(19px);
+        text-transform: none;
+        font-size: rem(15px);
+        font-weight: normal;
+
+        &:hover {
+            background: transparent;
+            color: #CA1B36;
+            transition: 0.4s
+        }
+    }
+}
+

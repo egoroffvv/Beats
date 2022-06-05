@@ -1,0 +1,106 @@
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.section__title {
+    font-size: rem(48px);
+    font-weight: bold;
+    margin-bottom: rem(50px);
+    text-align: center;
+    text-transform: uppercase;
+    
+    &--review {
+        margin-bottom: rem(27px);
+    }
+
+    &--colours {
+        position: absolute;
+        left: rem(70px);
+        top: rem(105px);
+    }
+
+    &--order {
+        margin-bottom: rem(50px);
+
+        @include tablets {
+            margin-bottom: rem(22px);
+        }
+
+        @include phones {
+            margin-bottom: rem(34px);
+        }
+
+    } 
+
+    &--video {
+        margin-bottom: rem(44px);
+
+        @include tablets {
+            margin-bottom: rem(40px);
+        }
+
+        @include phones {
+            margin-bottom: rem(34px);
+        }
+
+    }
+
+    @include phones {
+        font-size: rem(32px);
+    }
+}
+
+.specificities-section {
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+}
+
+.products-section {
+    background: #f8faf9;
+}
+
+.player-section {
+    background: #F5F5F5;
+  }
+  
+  .player-section__container {
+    max-width: rem(660px);
+    height: rem(405px); 
+    position: relative;
+    margin: 0 auto;
+}
+
+.video-section {
+    background: #F8FAF9;
+}
+  
+.order-section {
+    color: $white;
+    background: url(../img/order/background.png) center center / cover no-repeat;
+    height: 100vh;
+    min-height: rem(652px);
+    position: relative;
+}
+
+.map-section {
+    position: relative;
+  }
+  
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //background: url("../../img/forms/map.png") center center / cover no-repeat;
+  }
+  

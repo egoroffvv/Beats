@@ -1,0 +1,75 @@
+.catalog {
+    position: relative;
+    background: url(../img/hor-menu/74fda40506b8a70cdf88dab45544029f.png) center center / cover no-repeat;
+    color: #ffffff;
+}
+
+.catalog__accord {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.catalog__item {
+    display: flex;
+    @include phones {
+        &--active {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+        }
+    }
+
+    &--active {
+       .catalog__desc {
+           opacity: 1;
+       }
+    }
+}
+
+.catalog__button {
+    color: inherit;
+    width: rem(102px);
+    position: relative;
+
+    @include phones {
+        width: rem(90px);
+    }
+
+}
+
+.catalog__button-text {
+    position: relative;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 96%;
+    font-size: rem(36px);
+    white-space: nowrap;
+    font-family: rem(36px);
+}
+
+.catalog__content {
+    background: #333537E5;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s linear;
+}
+
+.catalog__desc {
+    opacity: 0;
+    font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+    line-height: rem(24px);
+    padding: rem(55px) rem(27px);
+    transition: opacity 0.3s linear;
+}

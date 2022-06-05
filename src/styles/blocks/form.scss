@@ -1,0 +1,111 @@
+ .form {
+     display: flex;
+     font-size: rem(16px);
+     line-height: 19px;
+     
+
+     @include tablets {
+         padding: 0 20%;
+         flex-direction: column;
+     }
+     
+     @include phones {
+         padding: 1%;
+         flex-direction: column;
+     }
+ }
+
+ .form__col {
+     flex: 1;
+     margin-right: rem(17px);
+
+     &:last-child {
+         margin-right: 0;
+     }
+
+     @include tablets {
+         margin-right: 0;
+     }
+ }
+
+ .form__row {
+     display: flex;
+     margin-bottom: rem(10px);
+
+     @include tablets {
+         margin-bottom: rem(17px);
+     }
+
+     &--textarea {
+         margin-bottom: rem(36px);
+         
+         @include tablets {
+             margin-bottom: rem(22px);
+         }
+
+     }
+ }
+
+ .form__block {
+     flex: 1;
+     margin-right: rem(17px);
+
+     &:last-child {
+         margin-right: 0;
+     }
+
+ }
+
+ .form__input {
+     width: 100%;
+     border: none;
+     padding: rem(16px) rem(18px);
+     border: solid rem(4px) transparent;
+     border-radius: rem(4px);
+
+     &--textarea {
+         display: block;
+         resize: none;
+         min-height: rem(152px);
+         min-width: rem(450px);
+         
+         @include tablets {
+            min-height: rem(90px);
+
+         }
+        
+     }
+   
+     &:focus {
+         border-color: #E01F3D;
+         outline: none;
+     }
+
+     @include tablets {
+        padding: rem(5px) rem(10px);
+     }
+ }
+
+ .form__use-cases {
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: rem(20px);
+
+     &--checkbox {
+         margin-bottom: rem(44px);
+     }
+
+     @include phones {
+         justify-content: center;
+     }
+ }
+
+ .form__buttons {
+     display: flex;
+     transform: translateX(rem(-2px));
+
+     @include tablets {
+        justify-content: center;
+     }
+     
+ }

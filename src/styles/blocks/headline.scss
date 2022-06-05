@@ -1,0 +1,43 @@
+.headline {
+    text-align: center;
+    margin-bottom: rem(95px);
+    
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: rem(34px) solid transparent;
+        border-left: rem(50px) solid #E01F3D;
+        border-bottom: rem(34px) solid transparent;
+        transform: rotate(20deg);
+        top: 95%;
+        left: 5%;
+        position: absolute;
+    }
+}
+
+.headline__title {
+    margin-bottom: rem(10px);
+
+    @include tablets {
+        margin-bottom: rem(4px);
+    }
+}
+
+.headline__desc {
+    font-size: rem(16px);
+    color: $darkGray;
+    padding: 0 20%;
+    margin-bottom: rem(63px);
+    line-height: rem(19px);
+
+    @include tablets {
+        padding: 0 15%;
+        margin-bottom: rem(50px);
+    }
+
+    @include phones {
+        padding: 0 5%;
+        margin-bottom: rem(50px);
+    }
+}

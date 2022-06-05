@@ -1,0 +1,121 @@
+.specificities {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.specificities__item {
+    flex: 1;
+    padding: 0 2%;
+    position: relative;
+
+    @include tablets {
+        padding: 0;
+    }
+
+
+    &:before {
+        content: url(../img/icons/circles.png);
+        position: absolute;
+        top: rem(55px);
+        right: 0;
+        transform: translateX(50%);
+
+        @include phones {
+            display: none;
+            margin-bottom: rem(18px);
+        }
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.specificity {
+    text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        margin-bottom: rem(29px);
+    }
+}
+
+.specificity__image-wrapper {
+    display: inline-block;
+    width: rem(128px);
+    height: rem(128px);
+    position: relative;
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.specificity__icon {
+    width: rem(60px);
+    height: rem(60px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.specificity__image {
+    margin-bottom: rem(14px);
+
+    @include phones {
+        margin-bottom: 0;
+    }
+
+}
+
+.specificity__text {
+    padding: 0 5%;
+
+    @include tablets {
+        padding: 0 1%;
+    }
+
+    @include phones {
+        padding: 2% 3% 0;
+    }
+    
+}
+
+.specificity__title {
+    font-size: rem(24px);
+    font-weight: bold;
+    margin-bottom: rem(2px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+    @include tablets {
+        margin-bottom: 0;
+    }
+}
+
+.specificity__desc {
+    font-size: rem(16px);
+    line-height: rem(19px);
+    padding: 0 3%;
+    color: #666666;
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+
+

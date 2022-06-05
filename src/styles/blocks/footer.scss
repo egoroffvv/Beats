@@ -1,0 +1,126 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2% 0; 
+    background: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.footer__contacts {
+    color: #292929;
+
+    @include phones {
+        margin-bottom: rem(19px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__adress {
+    @include tablets {
+        font-size: rem(21px);
+        line-height: rem(24px);
+    
+    }
+    @include phones {
+        font-size: rem(18px);
+        line-height: rem(24px);
+        margin-bottom: rem(14px);
+    }
+}
+
+.footer__phone {
+    @include tablets {
+        color: #E01F3D;
+    }
+
+    @include tablets {
+        color: #000000;
+    }
+}
+
+.footer_phone_icon {
+    height: rem(12px);
+    width: rem(12px);
+    margin-right: rem(5px);
+    
+    @include tablets {
+        fill: #E01F3D;
+    }
+}
+
+.socials {
+    margin-right: rem(30px);
+
+    @include tablets {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0;
+    }
+}
+
+.socials__item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: rem(5px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background: center center no-repeat;
+}
+
+.socials--icon--telegram .socials__link {
+    background: url(../img/socials/css_sprites.png) -110px -60px;
+    
+    &:hover {
+        background: url(../img/socials/css_sprites.png) -110px -10px;
+    }
+}
+
+.socials--icon--vk .socials__link {
+    background: url(../img/socials/css_sprites.png) -60px -110px;
+    
+    &:hover {
+        background: url(../img/socials/css_sprites.png) -10px -110px;
+    }
+}
+
+
+.socials--icon--facebook .socials__link {
+    background: url(../img/socials/css_sprites.png) -60px -10px;
+    
+    &:hover {
+        background: url(../img/socials/css_sprites.png) -10px -10px;
+    }
+}
+
+
+.socials--icon--insta .socials__link {
+    background: url(../img/socials/css_sprites.png) -60px -60px;
+
+    &:hover {
+        background: url(../img/socials/css_sprites.png) -10px -60px;
+    }
+}

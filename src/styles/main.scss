@@ -1,0 +1,46 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$gray: #F5F5F5;
+$black: #181818;
+$white: #FFFFFF;
+$darkGray: #666666;
+
+@import "media";
+
+//z-indexes
+$z-sidebar: 100;
+
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
+@import "../styles/layout.scss";
+
+//SCSS
+@import "../styles/blocks/hero.scss";
+@import "../styles/blocks/header.scss";
+@import "../styles/blocks/button.scss";
+@import "../styles/blocks/section.scss";
+@import "../styles/blocks/specificities.scss";
+@import "../styles/blocks/headline.scss";
+@import "../styles/blocks/reviews.scss";
+@import "../styles/blocks/int-avatar.scss";
+@import "../styles/blocks/form.scss";
+@import "../styles/blocks/radio.scss";
+@import "../styles/blocks/footer.scss";
+@import "../styles/blocks/fixed-menu.scss";
+@import "../styles/blocks/hamburger.scss";
+@import "../styles/blocks/products.scss";
+@import "../styles/blocks/peculiarities.scss";
+@import "../styles/blocks/fullscreen-menu.scss";
+@import "../styles/blocks/menu.scss";
+@import "../styles/blocks/modal.scss";
+@import "../styles/blocks/team.scss";
+@import "../styles/blocks/catalog.scss";
+@import "../styles/blocks/player.scss";
