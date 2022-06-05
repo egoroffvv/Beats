@@ -1003,7 +1003,7 @@ button {
   .radio--checkbox .radio__visible {
     border-radius: 0.22222rem; }
     .radio--checkbox .radio__visible:before {
-      background: url(../../img/icons/check-mark.png) center center no-repeat; }
+      background: url(../img/icons/check-mark.png) center center no-repeat; }
 
 .radio__item {
   display: none; }
